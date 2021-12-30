@@ -1,0 +1,25 @@
+
+.top{
+    @include grid-column-position(1,13);
+    @include flex-column-center;
+    padding: map-get($top-values, padding);
+    background: map-get($top-values, background);
+    background-size: map-get($top-values, background-size);;
+    color:  map-get($top-values, color);
+    .header{
+        @include flex-column-center;
+        gap: 15px;
+        h1{
+            font-family: $font-brand;
+        }
+        .nav{
+            @include flex-row-center;
+            @include menu-styles;
+            font-size: map-get($top-values, nav-font-size);
+            font-weight: map-get($top-values, nav-font-weight);
+            a{
+                color: map-get($top-values, color);
+            }
+        }
+    }
+}

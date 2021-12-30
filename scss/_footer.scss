@@ -1,0 +1,20 @@
+.footer{
+    @include grid-column-position(1,13);
+    @include flex-column-center;
+    background: map-get($footer-values, background);
+    color: map-get($footer-values, color);
+    padding: map-get($footer-values, padding);
+    gap: 20px;
+
+    .sm-links{
+        @include flex-row-center;
+        gap: 50px;
+        .links{
+            @include flex-row-center;
+            @include menu-styles;
+            a{
+                color: map-get($footer-values, color);
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway"; }
+
+.grid {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px; }
+
+.top {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  background: url("../img/gc-libraries-creative-tech-lab-wiOEVPVRfW4-unsplash.jpg") no-repeat fixed center;
+  background-size: cover;
+  color: white; }
+  .top .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; }
+    .top .header h1 {
+      font-family: "Shizuru", cursive; }
+    .top .header .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      gap: 15px;
+      font-size: large;
+      font-weight: 600; }
+      .top .header .nav a {
+        text-decoration: none; }
+      .top .header .nav a {
+        color: white; }
+
+.content {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; }
+  .content .title-content {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid black; }
+  .content .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .content .box .section1, .content .box .section2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0px;
+      gap: 15px;
+      padding: 20px 15px; }
+      .content .box .section1 a, .content .box .section2 a {
+        color: black;
+        text-decoration: none;
+        background-color: red;
+        padding: 15px;
+        border-radius: 10px; }
+    .content .box .section2 a {
+      background-color: aquamarine; }
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 50px 0px;
+  gap: 20px; }
+  .footer .sm-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px; }
+    .footer .sm-links .links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      gap: 15px; }
+      .footer .sm-links .links a {
+        text-decoration: none; }
+      .footer .sm-links .links a {
+        color: white; }

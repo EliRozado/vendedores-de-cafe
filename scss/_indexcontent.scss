@@ -1,0 +1,39 @@
+
+
+
+.content{
+    @include grid-column-position(2,12);
+    @include flex-column-center;
+    gap: 15px;
+
+    .title-content{
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid black;
+    }
+
+    .box{
+        @include flex-row-center;
+        .section1{
+            @include flex-column-center;
+            margin: 20px 0px;
+            gap: 15px;
+            padding: 20px 15px;
+            a{
+                color: black;
+                text-decoration: none;
+                background-color: red;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            
+        }
+        
+        .section2{
+            @extend .section1;
+            a{
+                background-color: aquamarine;
+            }
+        }
+    }
+}

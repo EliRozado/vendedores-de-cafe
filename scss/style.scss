@@ -1,0 +1,59 @@
+$font: 'Raleway';
+$font-brand: 'Shizuru', cursive;
+
+$top-values:(
+    padding: 80px 0px, 
+    color: white,
+    background: url("../img/gc-libraries-creative-tech-lab-wiOEVPVRfW4-unsplash.jpg") no-repeat fixed center,
+    background-size: cover,
+    nav-font-weight: 600,
+    nav-font-size: large
+);
+
+$footer-values:(
+    color: white,
+    background: black,
+    padding: 50px 0px
+);
+
+@mixin grid-column-position ($start, $end){
+    grid-column-start: $start;
+    grid-column-end: $end;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin menu-styles {
+    list-style: none;
+    gap: 15px;
+    a{
+        text-decoration: none;
+    }
+}
+
+*{
+    padding:0; 
+    margin:0;
+    font-family: $font;
+}
+
+.grid{
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+}
+
+@import "headerindex";
+@import "indexcontent";
+@import "footer";
